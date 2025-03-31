@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary: rgba(0, 38, 58, 0.8);
+    --primary-dark: rgba(0, 38, 58, 1);
+}
+
+html {
+    @media (min-width: 300px) and (max-width: 1399.98px) {
+        font-size: smaller;
+    }
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+    width: 100%;
+    padding: 1.5rem 0;
+    background: var(--primary);
+}
+
+
+
+header .logo-wrapper img {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+header .menu-wrapper ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+header .menu-wrapper ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    color: white;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+}
+
+header .menu-wrapper ul li a:hover {
+    opacity: .8;
+    border-bottom: 1px solid rgb(243, 243, 243);
+}
+
+@media (max-width:991px) {
+    header #toggleDiv {
+        display: none;
+    }
+
+    header #toggleDiv.show {
+        display: flex;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background-color: var(--primary-dark);
+        flex-direction: column;
+        align-items: centers;
+        width: 100%;
+        height: 100%;
+        padding: 4rem;
+    }
+}
+
+.welcome-banner .text-content {
+    width: 60rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+.welcome-banner .text-content h1 {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.welcome-banner .text-content a {
+    color: white;
+    text-align: none;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+
+}
+
+.carousel-item img {
+    height: 100vh;
+}
+
+.carousel-inner .text-content h1{
+    font-family: 'raleway', sans-serif;
+}
+
+.py-80 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.px-40 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#whoarewe {
+    background: #05465d url("https://www.verisknepal.com.np/img/whoweare.png");
+    padding-top: 120px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+.whoarewe .border-box {
+    border: 4px solid grey;
+    border-bottom: none;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 25px;
+    background-color: black;
+
+}
+
+.whoarewe .border-box .border-box2 {
+    height: 45vh;
+    width: 53vw;
+    margin-top: 25px;
+    background-color: rgb(34, 34, 60);
+}
+
+.whoarewe .border-box .border-box2 .text-content {
+    color: white;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.whoarewe .border-box .border-box2 .text-content p{
+    font-family: 'raleway', sans-serif;
+}
+.whoarewe .border-box .border-box2 .text-content h2 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.accordion-wrapper #accordion .card {
+    border: none;
+}
+
+.accordion-wrapper #accordion .card .card-header {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.accordion-wrapper #accordion .card .card-header a {
+    text-align: start;
+
+}
+
+.accordion-wrapper .text-content p {
+    color: #727272;
+    font-size: 16px;
+}
+
+.accordion-wrapper .list-group i{
+    color: #727272;
+    margin: 5px;
+}
+.accordion-wrapper .list-group li{
+    font-size: 16px;
+}
+
+#services{
+    height: 500px;
+}
+
+.ourservices{
+    margin-bottom: 65px;
+}
+
+.iconsection {
+    margin: 45px auto;
+    text-align: center;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.secondSection {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+#services .iconsection .icons h4{
+    font-family: 'raleway', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #4a4a4a;
+}
+
+.joinourteam {
+    background: url("https://www.verisknepal.com.np/img/banner-4.jpg");
+    margin-top: 100px;
+}
+
+.joinourteam .textcontentjoin {
+    width: 75%;
+}
+
+.joinourteam .textcontentjoin p {
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.joinourteam .textcontentjoin h2 {
+    font-size: 40px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+
+}
+
+.joinourteam .textcontentjoin a {
+    text-decoration: none;
+    border: 2px solid #6bcef1;
+    color: #6bcef1;
+    font-size: 18px;
+    padding: 15px 20px 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+.map .location iframe {
+    width: 100%;
+    height: 550px;
+    border: none;
+}
+
+.footer{
+    height: 270px;
+        background-image: url(https://www.verisknepal.com.np/img/footer-bg.png);
+        background-size: contain; 
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding-top: 50px;
+    }
+    
+
+.footer img{
+    width: 98px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #727272;
+}
+.footer p a{
+    text-decoration: none;
+}
+
+
+.lastFooter{
+    padding:50px;
+    background-color: black;
+}
+
+.lastFooter .footerdetail{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.lastFooter .footerdetail .middleSection{
+    color: white;
+    line-height: 25px;
+    font-size: 13px;
+    
+}
+
+.lastFooter .footerdetail .rightSection{
+    color: white;
+    font-size: 10px;
+}
+
