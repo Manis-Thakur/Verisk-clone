@@ -222,7 +222,8 @@ header .menu-wrapper ul li a:hover {
 }
 
 .joinourteam {
-    background: url("https://www.verisknepal.com.np/img/banner-4.jpg");
+    background-image: url("https://www.verisknepal.com.np/img/banner-4.jpg");
+    background-attachment: fixed;
     margin-top: 100px;
 }
 
