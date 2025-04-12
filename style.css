@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -98,6 +102,11 @@ header .menu-wrapper ul li a:hover {
 
 }
 
+.welcome-banner .text-content a:hover{
+    background-color: rgb(1, 30, 45);
+    transition: background-color 0.5s ease;
+}
+
 .carousel-item img {
     height: 100vh;
 }
@@ -105,6 +114,8 @@ header .menu-wrapper ul li a:hover {
 .carousel-inner .text-content h1{
     font-family: 'raleway', sans-serif;
 }
+
+
 
 .py-80 {
     padding-top: 5rem;
@@ -123,7 +134,9 @@ header .menu-wrapper ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: end;
+    transition: all 0.3s ease-in-out;
 }
+
 
 
 
@@ -161,22 +174,13 @@ header .menu-wrapper ul li a:hover {
     margin-bottom: 15px;
 }
 
-.accordion-wrapper #accordion .card {
-    border: none;
-}
 
-.accordion-wrapper #accordion .card .card-header {
-    background-color: rgba(255, 255, 255, 0.05);
-}
 
-.accordion-wrapper #accordion .card .card-header a {
-    text-align: start;
-
-}
 
 .accordion-wrapper .text-content p {
     color: #727272;
     font-size: 16px;
+    font-family: "montserrat", sans-serif;
 }
 
 .accordion-wrapper .list-group i{
@@ -185,14 +189,19 @@ header .menu-wrapper ul li a:hover {
 }
 .accordion-wrapper .list-group li{
     font-size: 16px;
+    font-family: "montserrat", sans-serif;
+    color: #727272;
+    padding: 8px 22px 10px;
 }
 
 #services{
     height: 500px;
 }
 
-.ourservices{
+.ourservices h2{
     margin-bottom: 65px;
+    font-size: 40px;
+    font-family: "raleway", sans-serif;
 }
 
 .iconsection {
@@ -218,7 +227,7 @@ header .menu-wrapper ul li a:hover {
     line-height: 29px;
     font-weight: bold;
     margin-top: 10px;
-    color: #4a4a4a;
+    color: #474747;
 }
 
 .joinourteam {
@@ -226,6 +235,12 @@ header .menu-wrapper ul li a:hover {
     background-attachment: fixed;
     margin-top: 100px;
 }
+
+.joinourteam .textcontentjoin h2{
+    font-size: 40px;
+    font-family: "raleway", sans-serif;
+}
+
 
 .joinourteam .textcontentjoin {
     width: 75%;
@@ -258,7 +273,9 @@ header .menu-wrapper ul li a:hover {
 .map .location iframe {
     width: 100%;
     height: 550px;
+    display: block;
     border: none;
+    cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
 }
 
 .footer{
@@ -285,6 +302,7 @@ header .menu-wrapper ul li a:hover {
 }
 .footer p a{
     text-decoration: none;
+    color: #727272;
 }
 
 
@@ -299,7 +317,9 @@ header .menu-wrapper ul li a:hover {
     text-align: center;
 
 }
-
+.lastFooter .footerdetail .middleSection a{
+    text-decoration: none;
+}
 .lastFooter .footerdetail .middleSection{
     color: white;
     line-height: 25px;
