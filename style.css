@@ -167,10 +167,11 @@ header .menu-wrapper ul li a:hover {
 
 .whoarewe .border-box .border-box2 .text-content p{
     font-family: 'raleway', sans-serif;
+
 }
 .whoarewe .border-box .border-box2 .text-content h2 {
     font-weight: bold;
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 15px;
 }
 
@@ -264,7 +265,8 @@ header .menu-wrapper ul li a:hover {
     border: 2px solid #6bcef1;
     color: #6bcef1;
     font-size: 18px;
-    padding: 15px 20px 15px 20px;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 20px;
     display: inline-block;
     margin-top: 20px;
 
@@ -291,13 +293,14 @@ header .menu-wrapper ul li a:hover {
 .footer img{
     width: 98px;
     display: block;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .footer p{
     text-align: center;
     margin-top: 20px;
     font-size: 13px;
+    font-family: "Montserrat", sans-serif;
     color: #727272;
 }
 .footer p a{
@@ -309,6 +312,7 @@ header .menu-wrapper ul li a:hover {
 .lastFooter{
     padding:50px;
     background-color: black;
+    height: 140px;
 }
 
 .lastFooter .footerdetail{
